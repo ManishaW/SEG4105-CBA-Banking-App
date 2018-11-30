@@ -1,0 +1,141 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lucia.cba_app.SelectedBill$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:fontFamily="@font/alegreya_sans"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:text="Payments Made"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:text="June 30, 2018 1:33PM $123.00"
+
+            app:fontFamily="@font/alegreya_sans" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:text="July 1, 2018 2:33PM $123.00" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:text="July 30, 2018 12:51PM $123.00" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:text="August 1, 2018 10:11AM $123.00" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:text="August 30, 2018 6:34PM $123.00" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="September 1, 2018 11:02AM $123.00" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="September 30, 2018 11:42AM $123.00" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="October 1, 2018 9:22AM $123.00" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="October 30, 2018 3:32AM $123.00" />
+
+        <TextView
+            android:id="@+id/textView23"
+            app:fontFamily="@font/alegreya_sans"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="November 30, 2018 11:02AM $123.00" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
