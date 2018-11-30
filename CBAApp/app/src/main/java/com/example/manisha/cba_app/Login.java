@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     private DrawerLayout dl;
@@ -24,7 +25,11 @@ public class Login extends AppCompatActivity {
 
     }
 
-    Button btn = (Button) findViewById(R.id.login_btn);
+    //Button btn = (Button) findViewById(R.id.login_btn);
 
-   
+//    public void onClickBtn(View v)
+//    {
+//        Toast.makeText(this, "Clicked on Button", Toast.LENGTH_LONG).show();
+//    }
+
 }
