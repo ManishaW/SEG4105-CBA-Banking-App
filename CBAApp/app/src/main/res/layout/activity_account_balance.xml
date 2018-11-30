@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountBalanceActivity"
+    android:theme="@style/AppTheme.NoActionBar">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/chequing"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accountNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFF"
+                app:fontFamily="@font/alegreya_sans" />
+
+            <TextView
+                android:id="@+id/moneys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="$2,000.00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/alegreya_sans"
+                android:textColor="#FFF" />
+
+            <LinearLayout
+                style="?attr/textAppearanceListItem"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/transfer"
+                    android:textColor="#FFF"
+                    app:fontFamily="@font/alegreya_sans" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/deposit"
+                    android:textColor="#FFF"
+                    app:fontFamily="@font/alegreya_sans" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:onClick="goToBills"
+                    android:text="@string/Pay_Bills"
+                    android:textColor="#FFF"
+                    app:fontFamily="@font/alegreya_sans" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="UBER"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="GOODLIFE FITNESS"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$22.78"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="JOB"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="+$480.92"
+                            android:textColor="#FFFF00"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="UBER"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="UBER"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="UOTTAWA"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$22.78"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="JOB"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="+$480.92"
+                            android:textColor="#FFFF00"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="AMAZON"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$45.67"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount77"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="UBER"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount77"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TIM HORTONS"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$22.78"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="JOB"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="+$480.92"
+                            android:textColor="#FFFF00"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="THAI EXPRESS"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A STORE"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tvAccount12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ANOTHER STORE"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+
+                        <TextView
+                            android:id="@+id/tvAmount12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:gravity="right"
+                            android:text="-$40.56"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/alegreya_sans" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

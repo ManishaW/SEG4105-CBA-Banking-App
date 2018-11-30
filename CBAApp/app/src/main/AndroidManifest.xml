@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,15 +17,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity
-            android:name="com.lucia.cba_app.ViewBillsActivity"
-            android:label="@string/title_activity_view_bills"
+        <activity android:name=".AccountBalanceActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".BankAccountMenu"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+        <activity
+            android:name="com.lucia.cba_app.ViewBillsActivity"
+            android:label="@string/title_activity_view_bills"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <activity
             android:name="com.lucia.cba_app.PayBill"
@@ -67,6 +73,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AccountBalanceActivity" />
+        <activity android:name=".BankAccountMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
     </application>
 
 </manifest>
