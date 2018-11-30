@@ -219,7 +219,7 @@
                             android:layout_weight="1"
                             android:foregroundGravity="right"
                             android:gravity="right"
-                            android:text="$40.56"
+                            android:text="-$40.56"
                             android:textColor="#FFF"
                             android:textSize="20sp"
                             app:fontFamily="@font/alegreya_sans" />
@@ -340,7 +340,7 @@
                             android:layout_weight="1"
                             android:foregroundGravity="right"
                             android:gravity="right"
-                            android:text="$40.56"
+                            android:text="-$45.67"
                             android:textColor="#FFF"
                             android:textSize="20sp"
                             app:fontFamily="@font/alegreya_sans" />
@@ -461,7 +461,7 @@
                             android:layout_weight="1"
                             android:foregroundGravity="right"
                             android:gravity="right"
-                            android:text="$40.56"
+                            android:text="-$40.56"
                             android:textColor="#FFF"
                             android:textSize="20sp"
                             app:fontFamily="@font/alegreya_sans" />
@@ -491,7 +491,7 @@
                             android:layout_weight="1"
                             android:foregroundGravity="right"
                             android:gravity="right"
-                            android:text="$40.56"
+                            android:text="-$40.56"
                             android:textColor="#FFF"
                             android:textSize="20sp"
                             app:fontFamily="@font/alegreya_sans" />
@@ -521,7 +521,7 @@
                             android:layout_weight="1"
                             android:foregroundGravity="right"
                             android:gravity="right"
-                            android:text="$40.56"
+                            android:text="-$40.56"
                             android:textColor="#FFF"
                             android:textSize="20sp"
                             app:fontFamily="@font/alegreya_sans" />
