@@ -12,9 +12,10 @@
         android:id="@+id/textView26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
         android:padding="10dp"
         android:text="Pay New Bill"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/header"
         android:textSize="30sp" />
 
     <TextView
@@ -205,6 +206,7 @@
 
             <Button
                 android:id="@+id/button8"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -213,6 +215,7 @@
 
             <Button
                 android:id="@+id/button10"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -295,6 +298,8 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"
             android:text="Continue"
             android:textSize="30sp"
             app:fontFamily="@font/alegreya_sans" />
