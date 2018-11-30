@@ -4,6 +4,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class Login extends AppCompatActivity {
     private DrawerLayout dl;
@@ -21,4 +23,8 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
     }
+
+    Button btn = (Button) findViewById(R.id.login_btn);
+
+   
 }
