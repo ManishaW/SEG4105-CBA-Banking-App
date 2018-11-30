@@ -14,10 +14,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name="com.lucia.cba_app.ViewBillsActivity"
-            android:label="@string/title_activity_view_bills"
+            android:name=".ViewBillsActivity"
+            android:label="@string/login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.PARENT_ACTIVITY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/login"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,31 +35,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.lucia.cba_app.PayBill"
+            android:name=".PayBill"
             android:label="@string/title_activity_pay_bill"
-            android:parentActivityName="com.lucia.cba_app.ViewBillsActivity"
+            android:parentActivityName=".ViewBillsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lucia.cba_app.ViewBillsActivity" />
+                android:value=".ViewBillsActivity" />
         </activity>
         <activity
-            android:name="com.lucia.cba_app.SelectedBill"
+            android:name=".SelectedBill"
             android:label="@string/title_activity_selected_bill"
-            android:parentActivityName="com.lucia.cba_app.ViewBillsActivity"
+            android:parentActivityName=".ViewBillsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lucia.cba_app.ViewBillsActivity" />
+                android:value=".ViewBillsActivity" />
         </activity>
         <activity
-            android:name="com.lucia.cba_app.ConfirmBill"
+            android:name=".ConfirmBill"
             android:label="@string/title_activity_confirm_bill"
-            android:parentActivityName="com.lucia.cba_app.ViewBillsActivity"
+            android:parentActivityName=".ViewBillsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lucia.cba_app.ViewBillsActivity" />
+                android:value=".ViewBillsActivity" />
         </activity>
 
         <meta-data
@@ -58,7 +67,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="com.lucia.cba_app.ContactUs"
+            android:name=".ContactUs"
             android:label="@string/title_activity_contact_us"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -67,6 +76,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Menu"></activity>
     </application>
 
 </manifest>

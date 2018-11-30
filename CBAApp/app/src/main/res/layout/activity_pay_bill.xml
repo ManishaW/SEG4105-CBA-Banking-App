@@ -5,7 +5,7 @@
     android:id="@+id/linearPB"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lucia.cba_app.PayBill"
+    tools:context=".PayBill"
     android:orientation="vertical">
 
     <TextView
