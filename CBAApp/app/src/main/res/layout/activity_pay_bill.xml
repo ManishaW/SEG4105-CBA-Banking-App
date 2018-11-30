@@ -145,16 +145,18 @@
                     android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:fontFamily="@font/alegreya_sans"
-                    android:text="Weekly" />
+                    android:text="Weekly"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/alegreya_sans" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:fontFamily="@font/alegreya_sans"
-                    android:text="Monthly" />
+                    android:text="Monthly"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/alegreya_sans" />
             </LinearLayout>
 
             <LinearLayout
@@ -167,18 +169,20 @@
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="67dp"
-                    app:fontFamily="@font/alegreya_sans"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Bi-weekly" />
+                    android:text="Bi-weekly"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/alegreya_sans" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:fontFamily="@font/alegreya_sans"
                     android:layout_weight="1"
-                    android:text="Anually" />
+                    android:text="Anually"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/alegreya_sans" />
             </LinearLayout>
 
         </RadioGroup>

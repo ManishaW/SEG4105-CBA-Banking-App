@@ -24,16 +24,16 @@
                 android:id="@+id/tabItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fontFamily="@font/alegreya_sans"
-                android:text="Bill Details" />
+                android:text="Bill Details"
+                app:fontFamily="@font/alegreya_sans" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem2"
                 android:layout_width="wrap_content"
-                app:fontFamily="@font/alegreya_sans"
-
                 android:layout_height="wrap_content"
-                android:text="Payments" />
+
+                android:text="Payments"
+                app:fontFamily="@font/alegreya_sans" />
 
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>

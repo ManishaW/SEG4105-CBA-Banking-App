@@ -43,33 +43,101 @@
             android:id="@+id/divider2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
+
             android:background="?android:attr/listDivider" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bill Payments Sent to GOVERNMENT OF CANADA"
+            android:text="Bill Payments Sent to "
 
+            android:textSize="24sp"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="GOVERNMENT OF CANADA"
+            android:textColor="#3c9b39"
             android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="15dp"
+            android:text="Account Number 346785279886"
+            android:textColor="#ed4fac4c"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            app:fontFamily="@font/alegreya_sans"
+            android:layout_height="wrap_content"
+            android:text="Frequency" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+
+            android:text="Bi-weekly"
+            android:textColor="#3c9b39"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:fontFamily="@font/alegreya_sans" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Payment Amount : $123.00"
+            android:text="Payment Amount "
 
+            android:textSize="24sp"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+
+            android:text="$123.00"
+            android:textColor="#3c9b39"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:fontFamily="@font/alegreya_sans" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Payments for this bill started June 21, 2018."
+            android:text="Payments Start Date"
 
+            android:textSize="24sp"
+            app:fontFamily="@font/alegreya_sans" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+
+            android:text="June 21, 2018"
+            android:textColor="#3c9b39"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:fontFamily="@font/alegreya_sans" />
 
         <TextView
@@ -78,7 +146,7 @@
             android:layout_height="wrap_content"
             android:text="Payments Scheduled to end ??"
 
-            android:textSize="18sp"
+            android:textSize="24sp"
             app:fontFamily="@font/alegreya_sans" />
 
     </LinearLayout>
